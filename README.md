@@ -24,7 +24,7 @@ I have been able to construct this Matrix W using brown corpus, even though I'm 
 
 According to the method if we have two usages of the word bank, example: (1)I was sitting by the side of the River bank. (2)I need to withdraw my savings from the bank.
 
-then vector, **bank1 =W[sitting,bank]vector(sitting) + W[side,bank]vector(side) + W[River,bank]*vector(river)**
+then vector, bank1 =W[sitting,bank]vector(sitting) + W[side,bank]vector(side) + W[River,bank]*vector(river)
 
 
 and,
