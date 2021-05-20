@@ -22,9 +22,9 @@ To achieve the above mentioned, the method is to first build a matrix W of V*V d
 
 then vector, 
                   
-      bank1 =W[sitting,bank]vector(sitting) + W[side,bank]vector(side) + W[River,bank]*vector(river)
+      bank1 =W[sitting,bank]*vector(sitting) + W[side,bank]*vector(side) + W[River,bank]*vector(river)
 and,
 
-      bank2 = W[need,bank]vector(need) + W[withdraw,bank]vector(withdraw) + W[savings,bank]*vector(savings)
+      bank2 = W[need,bank]*vector(need) + W[withdraw,bank]*vector(withdraw) + W[savings,bank]*vector(savings)
 
 The above representations mean that the target words can be represented as the sum of the vectors of their context. Here the vectors are directly taken from the word embedding (word2vec) trained on the Google news model. Also note that W[i,j] acts as a weight to each vector in the context to weigh the context word according to its relevance.
